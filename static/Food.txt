@@ -1,0 +1,12 @@
+Pizza, 10.99, 1
+Pasta, 9.99, 1
+Spaghetti, 6.99, 1
+Quesadilla, 7.99, 1
+Tacos, 3.99, 1
+Ravioli, 5.99, 1
+Apple Juice, 2.99, 1
+Orange Juice, 2.99, 1
+Carrot Juice, 2.99, 1
+Watermelon Juice, 2.99, 1
+Strawberry Milkshake, 3.99, 1
+Chocolate Milkshake, 4.99, 1

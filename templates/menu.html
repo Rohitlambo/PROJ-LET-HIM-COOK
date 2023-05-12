@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home - LetHimCook</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='home.css')}}">
+</head>
+
+<body>
+
+    <img class="logo" src="{{ url_for('static', filename='logo2.png')}}" width="100" height="100">
+    <nav>
+      <label class="title">LET HIM COOK</label>
+      <ul>
+        <img class="menu" src="{{ url_for('static', filename='menu bars.png') }}" width="70" height="70">
+        <a href="{{ url_for('cart') }}"><img class="cart" src="{{ url_for('static', filename='cart.png')}}" width="70" height="70"></a>
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a class ="active" href="{{ url_for('menu') }}">Menu</a></li>
+        <li><a href="{{ url_for('deals') }}">Deals</a></li>
+      </ul>
+    </nav>
+	<div class="container">
+	<div class="menu-title">
+		<h1>Our Menu</h1>
+    </div>	
+    <div class="menu-items">
+      <div class="menu-item">
+        <img src="{{ url_for('static', filename='pizza.png')}}" alt="pizza" />
+        <h2>Pizza - $10.99</h2>
+        <a href="{{ url_for('add_to_cart', item='Pizza') }}"><button>Add to Cart</button></a>
+      </div>
+      <div class="menu-item">
+        <img src="{{ url_for('static', filename='pasta.png')}}" alt="pasta" />
+        <h2>Pasta - $9.99</h2>
+        <a href="{{ url_for('add_to_cart', item='Pasta') }}"><button>Add to Cart</button></a>
+      </div>
+      <div class="menu-item">
+        <img src="{{ url_for('static', filename='spag.png')}}" alt="spag" />
+        <h2>Spaghetti - $6.99</h2>
+        <a href="{{ url_for('add_to_cart', item='Spaghetti') }}"><button>Add to Cart</button></a>
+      </div>
+      <div class="menu-item">
+        <img src="{{ url_for('static', filename='ques.png')}}" alt="Coke" />
+        <h2>Quesadilla - $7.99</h2>
+        <a href="{{ url_for('add_to_cart', item='Quesadilla') }}"><button>Add to Cart</button></a>
+      </div>
+      <div class="menu-item">
+        <img src="{{ url_for('static', filename='taco.png')}}" alt="Iced Tea" />
+        <h2>Tacos - $3.99</h2>
+        <a href="{{ url_for('add_to_cart', item='Tacos') }}"><button>Add to Cart</button></a>
+      </div>
+      <div class="menu-item">
+        <img src="{{ url_for('static', filename='ravioli.png')}}" alt="Lemonade" />
+        <h2>Ravioli - $5.99</h2>
+        <a href="{{ url_for('add_to_cart', item='Ravioli') }}"><button>Add to Cart</button></a>
+		</div>
+		<br>
+      <div class="menu-item">
+        <img src="{{ url_for('static', filename='applej.png')}}" alt="applejuice" />
+        <h2>Apple juice - $2.99</h2>
+        <a href="{{ url_for('add_to_cart', item='Apple Juice') }}"><button>Add to Cart</button></a>
+      </div>
+      <div class="menu-item">
+        <img src="{{ url_for('static', filename='orangej.png')}}" alt="orangejuice" />
+        <h2>Orange juice - $2.99</h2>
+        <a href="{{ url_for('add_to_cart', item='Orange Juice') }}"><button>Add to Cart</button></a>
+      </div>
+      <div class="menu-item">
+        <img src="{{ url_for('static', filename='carrotj.png')}}" alt="carrotjuice" />
+        <h2>Carrot Juice - $2.99</h2>
+        <a href="{{ url_for('add_to_cart', item='Carrot Juice') }}"><button>Add to Cart</button></a>
+      </div>
+      <div class="menu-item">
+        <img src="{{ url_for('static', filename='wmelonj.png')}}" alt="watermelonjuice" />
+        <h2>Watermelon Juice - $2.99</h2>
+        <a href="{{ url_for('add_to_cart', item='Watermelon Juice') }}"><button>Add to Cart</button></a>
+      </div>
+      <div class="menu-item">
+        <img src="{{ url_for('static', filename='strawberrym.png')}}" alt="Strawberry Milkshake" />
+        <h2>Strawberry Milshake - $3.99</h2>
+        <a href="{{ url_for('add_to_cart', item='Strawberry Milkshake') }}"><button>Add to Cart</button></a>
+      </div>
+      <div class="menu-item">
+        <img src="{{ url_for('static', filename='chocom.png')}}" alt="Choco Milkshake" />
+        <h2>Chocolate milkshake - $4.99</h2>
+        <a href="{{ url_for('add_to_cart', item='Strawberry Milkshake') }}"><button>Add to Cart</button></a>
+      </div>
+	</div>
+
+    </div>
+  </body>
+</html>
+
+
+

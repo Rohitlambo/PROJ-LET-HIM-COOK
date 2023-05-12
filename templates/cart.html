@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cart - LetHimCook</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='home.css')}}">
+</head>
+
+<body>
+
+    <img class="logo" src="{{ url_for('static', filename='logo2.png')}}" width="100" height="100">
+    <nav>
+      <label class="title">LET HIM COOK</label>
+      <ul>
+        <img class="menu" src="{{ url_for('static', filename='menu bars.png') }}" width="70" height="70">
+        <a class ="active" href="{{ url_for('cart') }}"><img class="cart" src="{{ url_for('static', filename='cart.png')}}" width="70" height="70"></a>
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('menu') }}">Menu</a></li>
+        <li><a href="{{ url_for('deals') }}">Deals</a></li>
+      </ul>
+    </nav>
+	<div class="container">
+	<div class="menu-title">
+		<h1>Your Cart</h1>
+    </div>
+	<div class = "cart-itemss">
+		{% if 'cart_items' in session %}
+			<ul>
+				{% for i in session['cart_items'] %}
+					<li>{{ i["item"] }} - Quantity: {{ i["quantity"] }}</li>
+				{% endfor %}
+			</ul>
+			<form action="{{ url_for('clear_cart') }}" method="POST">
+				<button type="submit">Clear Cart</button>
+			</form>
+		{% else %}
+			<p>Your cart is empty.</p>
+		{% endif %}
+			<a href="{{ url_for('checkout') }}"><button>Check out</button></a>
+	</div>
+  </div>  
+</body>
+</html>

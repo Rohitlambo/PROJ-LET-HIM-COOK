@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home - LetHimCook</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='home.css')}}">
+</head>
+
+<body>
+  <img class="logo" src="{{ url_for('static', filename='logo2.png')}}" width="100" height="100">
+  <nav>
+    <label class="title">LET HIM COOK</label>
+    <ul>
+      <a href="{{ url_for('cart') }}"><img class="cart" src="{{ url_for('static', filename='cart.png')}}" width="70" height="70"></a>
+      <li><a class="active" href="{{ url_for('home') }}">Home</a></li>
+      <li><a href="{{ url_for('menu') }}">Menu</a></li>
+      <li><a href="{{ url_for('deals') }}">Deals</a></li>
+      <!-- Add dropdown menu -->
+      <li class="dropdown">
+        <img class="menu dropbtn" src="{{ url_for('static', filename='menu bars.png') }}" width="70" height="70">
+         <form>
+		  <div class="dropdown-content">
+          <a href="#">.</a>
+          <a href="#">My Account ({{ email }})</a>
+          <a href="{{ url_for('logout') }}">Log out</a>
+        </form>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <div class="container">
+    <div class="images-container">
+	  <img class="homefood" src="{{ url_for('static', filename='sbpizza.png')}}">
+    </div>
+
+    <a href="{{ url_for('menu') }}"><button class="order-now">Order Now</button></a>
+
+
+
+  <div class="welcome-message">
+    <h1>Welcome, {{ session['email'] }}!</h1>
+    <p> By Rohit, Noah and Datta </p>
+  </div>
+</body>
+</html>

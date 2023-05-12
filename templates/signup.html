@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Let Him Cook - Sign Up</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='signup.css') }}">
+	</head>
+	<body>
+		<div class="header">
+			<h1>Let Him Cook</h1>
+			<p>Your ultimate destination for delicious food</p>
+		</div>
+		<div class="container">
+			<form action="{{ url_for('signup') }}" method="POST">
+				<h2>Sign Up</h2>
+				<table>
+					<tr>
+						<td>Email:</td>
+						<td><input type="text" name="email"></td>
+					</tr>
+					<tr>
+						<td>Password:</td>
+						<td><input type="password" name="password"></td>
+					</tr>
+					<tr>
+						<td colspan="2"><input type="submit" name="signup" value="Sign Up"></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Deals - LetHimCook</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='home.css')}}">
+</head>
+<body>
+
+    <img class="logo" src="{{ url_for('static', filename='logo2.png')}}" width="100" height="100">
+    <nav>
+      <label class="title">LET HIM COOK</label>
+      <ul>
+        <img class="menu" src="{{ url_for('static', filename='menu bars.png') }}" width="70" height="70">
+        <a href="{{ url_for('cart') }}"><img class="cart" src="{{ url_for('static', filename='cart.png')}}" width="70" height="70"></a>
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('menu') }}">Menu</a></li>
+        <li><a class="active" href="{{ url_for('deals') }}">Deals</a></li>
+      </ul>
+    </nav>
+	<div class="container">
+	<div class="menu-title">
+		<h1>Our Deals</h1>
+    </div>
+    <div class="deals-container">
+      <div class="deal-item">
+        <img class="deal-image" src="{{ url_for('static', filename='tacotue.png')}}" alt="Deal 1">
+        <div class="deal-info">
+          <h3>Taco Tuesday</h3>
+          <p>20% off tacos on a Tuesday from 12-6 p.m</p>
+       <a href="{{ url_for('add_to_cart', item='Taco Tuesday Deal') }}"><button>Use Deal</button></a>
+        </div>
+      </div>
+
+      <div class="deal-item">
+        <img class="deal-image" src="{{ url_for('static', filename='wkndoffer.png')}}" alt="Deal 2">
+        <div class="deal-info">
+          <h3>Weekend offer</h3>
+          <p>Buy 2 pizzas on a weekend and get a free beverage</p>
+       <a href="{{ url_for('add_to_cart', item='Weekend offer') }}"><button>Use Deal</button></a>
+        </div>
+      </div>
+
+      <div class="deal-item">
+        <img class="deal-image" src="{{ url_for('static', filename='studeal.png')}}" alt="Deal 3">
+        <div class="deal-info">
+          <h3>Student Deal</h3>
+          <p></p>
+       <a href="{{ url_for('add_to_cart', item='Student Deal') }}"><button>Use Deal</button></a>
+        </div>
+      </div>
+
+      <div class="deal-item">
+        <img class="deal-image" src="{{ url_for('static', filename='mozmon.png')}}" alt="Deal 4">
+        <div class="deal-info">
+          <h3>Mozzarella Monday</h3>
+          <p>50% off of any cheese delicacy</p>
+       <a href="{{ url_for('add_to_cart', item='Mozzarella Monday Deal') }}"><button>Use Deal</button></a>
+        </div>
+      </div>
+	</div>
+    </div>
+	
+</body>
+</html>

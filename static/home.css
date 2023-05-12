@@ -1,0 +1,457 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: verdana;
+    height: 100%;
+}
+
+.bg-image{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: repeat;
+    position: relative;
+    filter: blur(10px);
+    transform: scale(1.50);
+    z-index: -100000;
+    transform: translateY(-50px);
+}
+
+nav {
+    background-color: rgb(45, 97, 3);
+    height: 80px;
+    width: 100%;
+}
+
+label.title {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    line-height: 80px;
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 5px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active, a:hover {
+    background-color: rgb(62, 133, 5);
+    transition: .5s;
+}
+
+img.active, img.menu:hover, img.cart:hover {
+    background-color: rgb(62, 133, 5);
+    transition: .5s;
+}
+
+img.logo {
+    float: left;
+    margin-top: -10px;
+    
+}
+
+img.menu {
+    float: right;
+    margin-top: 5px;
+    border-radius: 3px;
+}
+
+img.cart{
+    float: right;
+    margin-top: 5px;
+    border-radius: 3px;
+}
+
+
+img.homefood{
+	width: 65%;
+	height: 500px;
+	transform: translateY(-10px);
+}
+
+	
+
+.order-button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transform: translateX(200px);
+  
+}
+
+.order-now {
+  position: relative;
+  z-index: 1;
+  transform: translateY(-40px);
+	width: 20%;
+	height: 90px;
+
+}
+
+.order-now {
+  background-color: #F44336;
+  color: white;
+  font-size: 24px;
+  padding: 12px 32px;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.3s ease 0s;
+  margin-left: auto;
+  display: block;
+}
+
+.order-now:hover {
+  background-color: rgb(255 149 54);
+}
+
+.dishes {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
+}
+
+.container {
+	height:100vh;
+	background-image: url("/static/lhcbg.png");
+	background-size:cover;
+	
+}
+
+h1 {
+  text-align: center;
+}
+
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.menu-item img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5%;
+  margin-bottom: 10px;
+}
+
+.menu-item h2 {
+  margin: 0;
+  font-size: 1.2em;
+  color: #fff;
+}
+
+.menu-item button {
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.menu-item button:hover {
+  background-color: #3e8e41;
+}
+
+.menu-title h1{
+	color: white;
+	font: Arial;
+	transform: translateX(180px);
+}
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    
+    /* Define dropdown button style */
+    .dropdown .dropbtn {
+      font-size: 5px;
+      border: none;
+      outline: none;
+      color: white;
+      background-color: inherit;
+      margin: 0;
+      padding: 0;
+    }
+    
+    /* Define dropdown content style */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      z-index: 1;
+    }
+    
+    /* Define dropdown links style */
+    .dropdown-content a {
+      color: black;
+      padding: 1px 6px;
+      text-decoration: none;
+      display: block;
+	  font-size: 8px;
+    }
+    
+    /* Define dropdown links hover style */
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+    
+    /* Show dropdown content on hover */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+.welcome-message {
+  background-color: rgb(45, 97, 3);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.dropdown-content form button {
+  display: block;
+  width: 100%;
+  padding: 8px 16px;
+  text-align: left;
+  border: none;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-content form button:hover {
+  background-color: #ddd;
+}
+
+
+.cart-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cart-item {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.item-quantity {
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+/* Add this to home.css */
+.reviews h2, .reviews p {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: verdana;
+    height: 100%;
+}
+
+.bg-image{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: repeat;
+    position: relative;
+    filter: blur(10px);
+    transform: scale(1.50);
+    z-index: -100000;
+    transform: translateY(-50px);
+}
+
+nav {
+    background-color: rgb(45, 97, 3);
+    height: 80px;
+    width: 100%;
+}
+
+label.title {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    line-height: 80px;
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 5px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active, a:hover {
+    background-color: rgb(62, 133, 5);
+    transition: .5s;
+}
+
+img.active, img.menu:hover, img.cart:hover {
+    background-color: rgb(62, 133, 5);
+    transition: .5s;
+}
+
+img.logo {
+    float: left;
+    margin-top: -10px;
+    
+}
+
+img.menu {
+    float: right;
+    margin-top: 5px;
+    border-radius: 3px;
+}
+
+img.cart{
+    float: right;
+    margin-top: 5px;
+    border-radius: 3px;
+}
+
+img.dishes {
+	width: 650px;
+	margin-left:-235px;
+    transform: translateY(-600px);
+    transform: translateX(10px);
+
+}
+.container{
+	height:100vh;
+	background-image: url("/static/lhcbg.png");
+	background-size:cover;	
+}
+
+.deals-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.deal-item {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  text-align: center;
+  max-width: 300px;
+}
+
+.deal-image {
+  width: 100%;
+  height: auto;
+}
+
+.deal-info {
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+.deal-button {
+	font-color: white;
+	background-color: #bd1400;
+  
+}
+
+.cart-itemss {
+  margin-top: 30px;
+  text-align: center;
+  color: white;
+}
+
+.cart-itemss ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cart-itemss li {
+  margin: 10px 0;
+}
+
+.cart-itemss form {
+  margin-top: 20px;
+}
+
+.cart-itemss button {
+  background-color: #f44336;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cart-itemss button:hover {
+  background-color: #ff6659;
+}
